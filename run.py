@@ -5,6 +5,3 @@ app = Flask(__name__)
 def hello():
     return 'Hello World'
 
-test
-
-dsts
