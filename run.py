@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__) # Erstellung einer neuen Anwendung. Das __name__ gibt den import Namen an, wo die Anwendung defniert ist.
                       # Flask verwendet den import name um zu wissen wo die Ressourcen sind (templates, instance folder)
 
@@ -9,6 +9,7 @@ def hello():
 
 @app.route('/test')
 def test():
+    name= request.args.get('name')
     paragraph='<p>Hallo Welt</p>'
-    return render_template('test.html', name='Max Mustermann')
+    return render_template('test.html', name=name) # ermöglicht das jetzt, dass der Name aus der URL auch im Browser angezeigt wird.
 
