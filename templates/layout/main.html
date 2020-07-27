@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/lib/skeleton/normalize.css" /> <!--Einfügen von template Voreinstellungen von skeleton-->
+    <link rel="stylesheet" href="/static/lib/skeleton/skeleton.css" /> <!-- Einfügen von template Voreinstellungen von skeleton-->
+    <link rel="stylesheet" href="/static/style.css" /> <!-- Einfügen von template Voreinstellungen von skeleton -->
+
+
+</head>
+<body
+    <div class='container'>
+        <ul class="navigation">
+            <li class="navigation-item">
+                <a href="/">Startseite</a>
+            </li>
+            <li>
+                <a href="/test">Testseite</a>
+            </li>
+        </ul>
+        <div style="clear: both">&nbsp</div> <!-- &nbsp beudeutet leerzeichen. Damit wurde jetzt ein leerer Absatz eingefügt -->
+    {%block content%}{%endblock%}
+    </div>
+
+</body>
+</html>
