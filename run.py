@@ -10,5 +10,5 @@ def hello():
 @app.route('/test')
 def test():
     paragraph='<p>Hallo Welt</p>'
-    return "Hello Test!" + paragraph
+    return render_template('test.html', name='Max Mustermann')
 
